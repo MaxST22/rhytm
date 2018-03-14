@@ -1,0 +1,514 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+    font: 15px/1 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote{
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font: 15px/1 'Dosis', sans-serif;
+    font-weight: 400;
+}
+section {
+    padding-top: 140px;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.title {
+    padding-bottom: 75px;
+    text-transform: uppercase;
+}
+.title h2 {
+    letter-spacing: .5em;
+}
+
+.section-light {
+    color: #777;
+    background: #fff;
+}
+.section-light .title h2 {
+    color: #111;
+}
+.section-grey {
+    color: #111;
+    background: #f8f8f8;
+}
+.section-dark {
+    color: #fff;
+    background: #111;
+}
+blockquote {
+    padding: 0;
+    border: none;
+    font-size: 24px;
+    line-height: 38px;
+}
+blockquote .author {
+    display: block;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: .2em;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.text {
+    line-height: 26px;
+}
+
+/* CUSTOM STYLES */
+/* Стили на Хедера + Секция City*/
+/* START HEADER */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    right: 0;
+    line-height: 75px;
+    background-color:#a1a1a1;
+}
+#logo {
+    margin-left: 30px;
+}
+#menu li {  
+    float:left;
+    margin: 0px 15px 0px;
+}
+#menu a {    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;    
+    font-weight: 300;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(213, 213, 213,.7);
+}
+#menu a:hover {
+	color: #fff;
+}
+#menu li:last-child {
+    margin-right: 30px;
+}
+#menu li:first-child {
+    margin-left: 30px;
+}
+/* END HEADER */
+/* START SEction city */
+.city {
+    padding-top: 0px;
+}
+.city .container-fluid {
+    height: 900px;
+    background: #a1a1a1 url(../img/bg-optimized.jpg) bottom no-repeat;
+    background-size: cover;
+    padding-top: 238px;
+}
+.city .container-fluid h1 {
+    font: 30px 'Dosis', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.7em;
+    color: rgba(246, 246, 246,.9);
+    text-transform: uppercase;
+    margin-bottom: 88px;
+    margin-left: 30px;
+}
+.city .container-fluid span {
+    font:  17px 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: .01em;
+    color: rgba(221, 221, 221,.6);
+}
+/* END Section city */
+/* конец Хедера + Секция City*/
+/* ABOUT STUDIO START */
+.about-studio {
+    padding-bottom: 140px;
+    border-bottom: 1px solid #ececec;
+}
+.about-studio .people {
+    margin-top: 106px;
+}
+.about-studio .photo {
+    position: relative;
+}
+.about-studio .photo img {
+    filter: grayscale(100%);
+}
+.about-studio .name,
+.about-studio .position {
+    display: block;
+    font-family: 'Dosis';
+    font-weight: 400;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+}
+.about-studio .name {
+    margin: 28px 0 12px;
+}
+.about-studio .position {
+    font-size: 12px;
+}
+.about-studio .skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+	transform: scale(.8);
+    transition: opacity .3s, transform .3s;
+	padding: 36px 40px 20px;
+}
+.about-studio .skills-title {
+	display: block;
+	font-family: 'Dosis';
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .3em;
+	margin-bottom: 27px;
+}
+.about-studio .skills p {
+	color: rgba(255, 255, 255, .5);
+	font-size: 13px;
+	line-height: 21px;
+	margin-bottom: 40px;
+}
+.about-studio .progress-wrp {
+	font-weight: 400;
+	letter-spacing: .2em;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+}
+.about-studio .progress-wrp > span {
+	font-size: 11px;
+}
+.about-studio .progress {
+	height: 12px;
+	margin-top: 6px;
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, .15);
+}
+.about-studio .progress-bar {
+	background-color: rgba(255, 255, 255, .75);
+}
+
+.about-studio .photo:hover .skills {
+    opacity: 1;
+	transform: scale(1);
+}
+
+.about-studio .photo .skills .progress-bar {
+	width: 0;
+	transition: width .3s ease-in-out .3s;
+}
+.about-studio .photo:hover .skills .progress-branding .progress-bar {
+    width: 74%;
+}
+.about-studio .photo:hover .skills .progress-design .progress-bar {
+    width: 85%;
+}
+.about-studio .photo:hover .skills .progress-development .progress-bar {
+    width: 81%;
+}
+.about-studio .photo:hover .skills .progress-photography .progress-bar {
+    width: 77%;
+}
+/* ABOUT STUDIO END */
+
+/* SERVICES START */
+.services {
+	padding-bottom: 140px;
+}
+.services .nav-tabs li {
+	width: 20%;
+	font-family: 'Dosis';
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.services .icon-et {
+	display: block;
+	font-size: 48px;
+	margin-bottom: 34px;
+}
+.services .nav-tabs {
+	border: none;
+}
+.services .nav-tabs > li > a {
+	line-height: 1;
+	border: none;
+	color: rgba(17, 17, 17, .5);
+	transition: color .3s;
+}
+.services .nav > li > a:focus,
+.services .nav > li > a:hover {
+	background: none;
+	color: rgba(17, 17, 17, 1);
+}
+
+.services .nav-tabs > li.active > a,
+.services .nav-tabs > li.active > a:focus,
+.services .nav-tabs > li.active > a:hover {
+	border: none;
+	color: rgba(17, 17, 17, 1);
+}
+.services .tab-content {
+	padding-top: 62px;
+}
+/* SERVICES END */
+
+/* LETS-TALK START*/
+.lets-talk {
+   height: 445px;
+}
+.lets-talk img {
+	margin-top: -172px;
+}
+.lets-talk h2 {
+    font-family: 'Dosis';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: rgba(210, 210, 210, 1);
+    line-height: 26px;
+    margin-bottom: 14px;
+}
+.lets-talk p {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: .001em;    
+    color: rgba(149, 149, 149, .7);
+    margin-bottom: 40px;
+    line-height: 26px;
+}
+.lets-talk .btn-light {
+    color: #111;
+    background-color: rgba(207, 207, 207, .8);
+}
+.lets-talk .btn-default {
+    width: 170px;
+    height: 40px;   
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.lets-talk .btn-default a {
+    text-decoration: none;
+}
+.lets-talk .btn a:hover {
+    color: #111;
+}
+/* LETS-TALK END*/
+
+/* SECTION Portfolio START */
+.portfolio {
+    /* background: gray; */
+    /* border: 1px solid red; */
+	padding-bottom: 140px;
+}
+.portfolio .p-title {
+    /* background: gray; border: 1px solid red; */
+    font-family: 'Dosis';
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 75px;
+}
+.p-text {
+    /* background: gray; border: 1px solid red; */
+    max-width: 760px;
+    font-family: 'Open sans';
+    margin: auto;
+    margin-bottom: 85px;
+}
+.portfolio .nav-tabs li {
+	width: 25%;
+	font-family: 'Dosis';
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.portfolio .icon-et {
+	display: block;
+	font-size: 48px;
+	margin-bottom: 34px;
+}
+.portfolio .nav-tabs {
+	border: none;
+}
+.portfolio .nav-tabs > li > a {
+	line-height: 1;
+	border: none;
+	color: rgba(17, 17, 17, .5);
+	transition: color .3s;
+}
+.portfolio .nav > li > a:focus,
+.portfolio .nav > li > a:hover {
+	background: none;
+	color: rgba(17, 17, 17, 1);
+}
+.portfolio .nav-tabs > li.active > a,
+.portfolio .nav-tabs > li.active > a:focus,
+.portfolio .nav-tabs > li.active > a:hover {
+	border: none;
+	color: rgba(17, 17, 17, 1);
+}
+.portfolio .tab-content {
+	padding-top: 62px;
+}
+.portfolio .nav {
+    height: auto;
+}
+.tab-content .row {
+    padding-left: 30px;
+    /* background: red; */
+}
+.tab-content img {
+    filter: grayscale(100%);
+    transition: filter .3s;
+}
+.tab-content img:hover {
+    filter: grayscale(0%);
+}
+.portfolio .container .row {
+    padding-bottom: 7px;
+}
+.tab-content .img-port {
+    padding: 0;
+    width: 32%;
+}
+.portfolio .tab-content .row div:nth-child(even) {
+    margin: 0 7px;
+}
+/* SECTION Portfolio END */
+
+ /* SECTION Start Project START*/
+ .start-project h2 {
+    text-transform: uppercase;
+    padding-bottom: 50px;
+ }
+ /* SECTION Start Project END*/
+
+/* SECTION Why Choose Us? START */
+.choose-us {
+    height: 859px;
+}
+.choose-us-title {        
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    padding-bottom: 75px;
+}
+.choose-us .icon-et {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 34px;
+}
+.choose-us .arguments {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .4em;
+    text-transform: uppercase;    
+}
+.choose-us p {
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .001em;    
+    margin-top: 34px;
+}
+.choose-us .container .row:last-child {    
+    margin-top: 80px;
+}
+/* SECTION Why Choose Us? END */
+
+
+.btn-default {
+
+}
+.btn-dark {
+    color: #fff;
+    background: #111;
+}
+
+.contact .form-left,
+.contact .form-right {
+    width: 50%;
+    float: left;
+}
+
+.contact .form-left {
+    padding-right: 5px;
+}
+.contact .form-center {
+    margin-top: 20px;
+    clear: left;
+}
+.contact .form-right {
+    padding-left: 5px;
+}
+.contact form {
+    margin-top: 80px;
+}
+.contact input,
+.contact textarea {
+    font-size: 12px;
+    border-color: rgba(0,0,0,.1);
+    border-radius: 2px;
+    transition: border
+}
+contact input:focus,
+.contact textarea:focus {
+    font-size: 12px;
+    border-color: rgba(0,0,0,.5);
+}
+.contact input {
+    height: 36px;
+}
+.contact input + input{
+    margin-top: 10px;
+}
+.contact textarea {
+    min-height: 82px;
+    resize: vertical;
+}
+.contact .info {
+    font-size: 11px;
+    line-height: 36px;
+    color: #aaa;
+}
+.contact .btn {
+    line-height: 1px;
+    font-size: 13px;
+    padding: 12px 20px 13px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all .3s;
+    border: none;
+    letter-spacing: .2em;
+}
